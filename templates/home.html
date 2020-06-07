@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imdb movie</title>
+</head>
+<body >
+{% extends "base.html" %}
+{% block content %}
+<h2>Hello, {{name}}</h2>
+
+<form action="movie" method = get>
+    {% csrf_token %}
+    Movie_name = <input type = "text" name = "Movie_name"> <br>
+    <input type="submit">
+</form>
+
+    <h2> Get the average rating of movie genre on one click </h2>
+    <br> <br>
+    <form action="Genre" method = get>
+        {% csrf_token %}
+        Genre = <input type="text" name="Genre">
+        <input type="submit">
+    </form>
+   <!-- <form action="Romance" method = get>
+        {% csrf_token %}
+        <button type="submit">Romance</button>
+    </form>-->
+
+
+
+
+
+
+{% endblock content %}
+</body>
+</html>
