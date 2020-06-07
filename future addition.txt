@@ -1,0 +1,3 @@
+Use CSS and javascript to make the site beautiful
+Use error Handling
+Do it for multiple user and deploy it.
